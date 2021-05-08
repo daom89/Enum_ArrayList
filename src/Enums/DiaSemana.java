@@ -9,8 +9,16 @@ class Enums.DiaSemana
 }*/
 
 public enum DiaSemana {
-    LUNES(1), MARTES(2), MIERCOLES(3), JUEVES(4), VIERNES(5), SABADO(6), DOMINGO(7);
+    LUNES(1),
+    MARTES(2),
+    MIERCOLES(3),
+    JUEVES(4),
+    VIERNES(5),
+    SABADO(6),
+    DOMINGO(7);
+
     private int numDia;
+
     public String toCapitalize(){
         return this.toString().substring(0, 1).toUpperCase() + this.toString().substring(1).toLowerCase();
     }
